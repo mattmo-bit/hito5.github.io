@@ -1,16 +1,41 @@
-# React + Vite
+🍕 Pizzería Mamma Mía! - Hito 5 (React Router)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto corresponde al desarrollo del Hito 5 de la aplicación web "Pizzería Mamma Mía!", construida con React y Vite. En este hito se ha transformado la aplicación en una Single Page Application (SPA) mediante la implementación del sistema de enrutamiento dinámico utilizando React Router DOM (v6).
 
-Currently, two official plugins are available:
+🚀 Características e Implementaciones del Hito 5
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Estructura SPA basada en Vistas:
 
-## React Compiler
+Migración de las vistas principales (Home, Register, Login, Cart, Pizza) a la carpeta src/pages/.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Configuración de Enrutamiento (React Router v6):
 
-## Expanding the ESLint configuration
+Encapsulamiento del componente principal con <BrowserRouter> en main.jsx.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Definición del mapa de rutas centralizado con <Routes> y <Route> en App.jsx.
+
+Navegación Dinámica sin Recarga:
+
+Menú de navegación (Navbar) adaptado con componentes <Link> para permitir una experiencia fluida e instantánea.
+
+El botón del carrito (🛒 Total: $xxx) redirige directamente a la vista de compras /cart.
+
+Nuevas Páginas Integradas:
+
+Profile (/profile): Muestra la información básica del usuario (email simulado) y opción de cierre de sesión.
+
+NotFound (/404 o *): Vista personalizada para capturar rutas inexistentes con un botón de retorno al inicio.
+
+
+💻 Tecnologías Utilizadas
+
+React 18
+
+React Router DOM v6
+
+Vite
+
+JavaScript (ES6+)
+
+CSS3 / HTML5
+
