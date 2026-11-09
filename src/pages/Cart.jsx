@@ -10,6 +10,7 @@ const Cart = () => {
     setCart(updatedCart);
   };
 
+  
   const decreaseCount = (index) => {
     const updatedCart = [...cart];
     if (updatedCart[index].count > 1) {
